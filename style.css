@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.calculator-container{
+    width: 400px;
+    margin: 50px auto;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow:  rgb(89, 5, 88) 0px 1px 2px;
+}
+.display-ans{
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 0.5px solid  rgb(193, 23, 187);
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: right;
+}
+   
+.buttons-section{
+    
+    margin-top: 0px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 15px;
+
+}
+
+.buttons-section button{
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid  #8a0986;
+    border-radius: 10px;
+    background-color: #feddfd;
+    cursor: pointer;
+    transition: background-color 1s ease;
+    box-shadow: black 0px 1px 2px;
+    transition: all 0.1s ease-;
+}
+
+button:active{
+    transform: translateY(3px);
+}
+
+.buttons-section button:nth-child(-n+4) {
+    background-color: #c27cc0;
+    border: #ff02f7 solid 1px;
+}
+
+.buttons-section button:nth-child(4n+4):not(:nth-child(4)){
+    background-color: #c27cc0;
+    border: #ff02f7 solid 1px;
+}
+
+.buttons-section button:nth-child(-n+4):hover,
+.buttons-section button:nth-child(4n+4):not(:nth-child(4)):hover {
+    background-color: #c006ba;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons-section button:hover{
+    transition: all ease-in-out 0.5ms;
+    transform: scale(1.05);
+}
+
+.dark-theme{
+    background-color: black;
+    color:  #80057b;
+}
